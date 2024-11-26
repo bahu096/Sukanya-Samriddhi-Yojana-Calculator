@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukanya Samriddhi Yojana (SSY) Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="calculator">
+    <h2>Sukanya Samriddhi Yojana Calculator</h2>
+
+    <label for="childAge">Age of Girl Child (in Years):</label>
+    <input type="number" id="childAge" min="0" max="10" value="5">
+
+    <label for="yearlyInvestment">Yearly Investment Amount (₹):</label>
+    <input type="number" id="yearlyInvestment" value="50000">
+
+    <label for="startYear">Investment Start Year:</label>
+    <input type="number" id="startYear" value="2024">
+
+    <button onclick="calculateSSY()">Calculate Maturity Amount</button>
+
+    <div class="result" id="result" style="display: none;">
+        <h3>Results:</h3>
+        <p>Maturity Year: <span id="maturityYear"></span></p>
+        <p>Total Corpus on Maturity (₹): <span id="totalMaturity"></span></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
